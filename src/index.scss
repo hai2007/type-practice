@@ -1,0 +1,25 @@
+body {
+    font-family: cursive;
+}
+
+.index-view {
+    &>header {
+        &>h2 {
+            line-height: 100px;
+            background-image: url('../logo.png');
+            background-size: auto 70%;
+            background-repeat: no-repeat;
+            background-position: 10px center;
+            padding-left: 100px;
+            box-shadow: -3px 3px 20px 0px #d2d2db;
+
+            a {
+                color: black;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

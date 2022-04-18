@@ -1,0 +1,30 @@
+.home-view {
+    text-align: center;
+    padding-top: 100px;
+
+    &>a {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        box-shadow: -3px 3px 20px 0px #d2d2db;
+        margin: 50px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding-top: 100px;
+        line-height: 2em;
+        cursor: pointer;
+
+        &:hover {
+            outline: 1px solid white;
+            text-decoration: underline;
+        }
+
+        &.english {
+            background-image: url('../../image/english.png');
+        }
+
+        &.pinyin {
+            background-image: url('../../image/pinyin.png');
+        }
+    }
+}
