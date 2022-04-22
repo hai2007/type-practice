@@ -5,7 +5,7 @@ class English extends React.Component {
 
     render() {
         return (<div>
-            englist
+            english
         </div>)
     }
 }
