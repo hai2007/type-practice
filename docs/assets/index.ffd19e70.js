@@ -1,0 +1,1 @@
+import{R as e,j as a,a as n}from"./index.68790eb0.js";class s extends e.Component{render(){return a("div",{className:"home-view",children:[n("a",{className:"english",target:"_blank",href:"#/?pagename=english",children:"英文打字"}),n("a",{className:"pinyin",target:"_blank",href:"#/?pagename=pinyin",children:"拼音打字"})]})}}export{s as default};
