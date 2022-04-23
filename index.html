@@ -2,16 +2,36 @@
 <html lang="zh-cn">
 
 <head>
-  <meta charset="utf-8" />
-  <link rel="icon" href="./logo.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>type-practive | 一个在线的免费打字练习工具</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>type-practice | 一个在线的免费打字练习工具</title>
+    <style>
+        .fork {
+            user-select: none;
+            position: fixed;
+            transform: rotate(45deg);
+            line-height: 1.6em;
+            transform-origin: 150px 23px;
+            text-align: center;
+            font-family: sans-serif;
+            display: inline-block;
+            top: 60px;
+            right: -77px;
+            width: 300px;
+            background-color: #f44336;
+            outline: 4px solid #f44336;
+            border: 2px dashed #ffffff;
+            color: #ffffff;
+        }
+    </style>
 </head>
 
 <body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root"></div>
-  <script type="module" src="./src/index.tsx"></script>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="./src/index.tsx"></script>
+    <a href="https://github.com/hai2007/type-practice" class='fork' target="_blank">Fork Me on Github</a>
 </body>
 
 </html>

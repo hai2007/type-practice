@@ -5,6 +5,9 @@ class Home extends React.Component {
 
     render() {
         return (<div className='home-view'>
+             <a className='single' target='_blank' href='#/?pagename=single'>
+                键盘练习
+            </a>
             <a className='english' target='_blank' href='#/?pagename=english'>
                 英文打字
             </a>
