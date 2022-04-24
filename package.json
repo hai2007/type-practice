@@ -9,6 +9,7 @@
   "dependencies": {
     "@hai2007/style": "^0.3.0",
     "@hai2007/tool": "^1.2.0",
+    "clunch": "^2.3.6",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-lazily-component": "^0.3.0"
