@@ -1,12 +1,13 @@
 {
   "name": "type-practice",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "scripts": {
     "dev": "vite",
     "build": "vite build"
   },
   "homepage": ".",
   "dependencies": {
+    "@hai2007/browser": "^0.3.5",
     "@hai2007/style": "^0.3.0",
     "@hai2007/tool": "^1.2.0",
     "clunch": "^2.3.6",

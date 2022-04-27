@@ -3,17 +3,21 @@ import './index.scss'
 
 class Home extends React.Component {
 
+    doit() {
+        alert('此功能未完成开发，敬请期待~')
+    }
+
     render() {
         return (<div className='home-view'>
-             <a className='single' target='_blank' href='#/?pagename=single'>
+            <a className='single btn' target='_blank' href='#/?pagename=single'>
                 键盘练习
             </a>
-            <a className='english' target='_blank' href='#/?pagename=english'>
+            <span className='english btn' onClick={this.doit}>
                 英文打字
-            </a>
-            <a className='pinyin' target='_blank' href='#/?pagename=pinyin'>
+            </span>
+            <span className='pinyin btn' onClick={this.doit}>
                 拼音打字
-            </a>
+            </span>
         </div>)
     }
 }
