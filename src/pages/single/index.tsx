@@ -1,8 +1,8 @@
 import React from 'react'
-import keyboardImage from './keyboard.clunch'
-import Clunch from 'clunch'
-import getKeyString from "@hai2007/browser/getKeyString"
 import './index.scss'
+import ctrl from './ctrl.js'
+
+let flag = 0
 
 class Pinyin extends React.Component {
 
@@ -11,25 +11,23 @@ class Pinyin extends React.Component {
     }
 
     render() {
-        return (<div className='keyboard-canvas' id='keyboard-canvas'></div>)
+        return (
+            <div className='keyboard'>
+                <div className='canvas' id='keyboard-canvas'></div>
+                <div className="ctrl">
+                    <span>时间<i id='single-time'>00:00:00</i></span>
+                    <span>速度<i id='single-speed'>0字/分</i></span>
+                    <span>进度<i id='single-process'>0%</i></span>
+                    <span>正确率<i id='single-rate'>100%</i></span>
+                </div>
+            </div>
+        )
     }
 
     componentDidMount() {
 
-        new Clunch({
-            el: document.getElementById('keyboard-canvas'),
-            render: keyboardImage,
-            mounted() {
-
-                document.body.addEventListener('keydown', event => {
-
-                    let key = getKeyString(event)
-                    console.log(key)
-
-                })
-
-            }
-        })
+        if (flag == 0) ctrl()
+        flag += 1
 
     }
 }

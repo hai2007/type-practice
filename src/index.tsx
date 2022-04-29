@@ -42,7 +42,7 @@ if (el) {
                         <a href="https://github.com/hai2007/type-practice" target="_blank" title='点击我查看源码'> 一个在线的免费打字练习工具</a>
                     </h2>
                 </header>
-                <Page></Page>
+                <Page />
             </div>
         </React.StrictMode>
     )

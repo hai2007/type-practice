@@ -1,0 +1,7 @@
+<group c-for="(row,i) in keys">
+    <group c-for="(col,j) in row">
+        <rect :y='i*100+10' :x='j*100+10+i*50' width='80' height='80'
+            :fill-color='col==currentKey?"black":(col==errorKey?"red":(col==rightKey?"green":"gray"))' />
+        <text :y='i*100+50' :x='j*100+50+i*50' :content='col' fill-color='white' align='center' />
+    </group>
+</group>

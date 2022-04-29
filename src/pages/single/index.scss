@@ -1,6 +1,33 @@
-.keyboard-canvas {
-    width: 700px;
-    height: 400px;
-    margin: 50px auto;
-    outline: 1px solid red;
+.keyboard {
+    text-align: center;
+
+    .canvas {
+        width: 1000px;
+        height: 300px;
+        margin: 50px auto;
+    }
+
+    .ctrl {
+        background-color: #d8d6d6;
+        border-radius: 15px;
+        line-height: 30px;
+        width: 1000px;
+        margin: auto;
+        box-shadow: 2px 5px 11px 0px #6d6868;
+
+        &>span {
+            display: inline-block;
+            width: 120px;
+            font-size: 14px;
+            white-space: nowrap;
+
+            &>i {
+                color: #c87b08;
+                font-size: 12px;
+                font-style: normal;
+                padding: 0 5px;
+                font-weight: 800;
+            }
+        }
+    }
 }
